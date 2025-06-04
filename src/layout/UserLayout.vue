@@ -63,7 +63,7 @@ const loadStyle = (styleFile) => {
     const link = document.createElement("link");
     link.id = "dynamic-style";
     link.rel = "stylesheet";
-    link.href = `/src/assets/styles/${styleFile}`;
+    link.href = `/styles/${styleFile}`;
     document.head.appendChild(link);
   }
 };
