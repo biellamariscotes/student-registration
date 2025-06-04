@@ -99,7 +99,7 @@ const imageSrc = computed(() => {
     case "check":
       return "/assets/img/actions/check.png";
     case "warning":
-      return "/assets/img/actions/check.png";
+      return "/assets/img/actions/warning.png";
     case "delete":
       return "/assets/img/actions/delete.png";
     default:
