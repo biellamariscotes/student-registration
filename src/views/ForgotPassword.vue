@@ -34,6 +34,7 @@
 </template>
 
 <script setup lang="ts">
+import "@/assets/styles/login.css";
 import { useRouter } from "vue-router";
 import { useAuthStore } from "@/store/useAuthStore";
 
