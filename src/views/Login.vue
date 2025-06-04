@@ -63,6 +63,8 @@
 </template>
 
 <script setup lang="ts">
+import "@/assets/styles/login.css";
+
 import { ref, reactive, watch, computed } from "vue";
 import { useRouter } from "vue-router";
 import { useAuthStore } from "@/store/useAuthStore";
@@ -165,8 +167,6 @@ async function handleLogin() {
 </script>
 
 <style scoped>
-@import "../assets/styles/login.css";
-
 .el-input__icon {
   color: var(--primary-white);
 }
