@@ -19,13 +19,13 @@ const routes: Array<RouteRecordRaw> = [
         path: "/",
         name: "Sign In",
         component: () => import("../views/Login.vue"),
-        meta: { title: "Login", style: "login.css", requiresGuest: true },
+        meta: { title: "Login", requiresGuest: true },
       },
       {
         path: "/forgot-pass",
         name: "Forgot Password?",
         component: () => import("../views/ForgotPassword.vue"),
-        meta: { title: "Login", style: "Login.css", requiresGuest: true },
+        meta: { title: "Login", style: "login.css", requiresGuest: true },
       },
       {
         path: "/register",

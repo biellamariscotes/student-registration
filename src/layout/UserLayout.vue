@@ -46,39 +46,7 @@
 </template>
 
 <script setup>
-import { watch, onUnmounted } from "vue";
 import { useRoute } from "vue-router";
 
 const route = useRoute();
-
-// Function: Changes style file according to the set style in router
-const loadStyle = (styleFile) => {
-  // Remove any existing dynamic style
-  const existingStyle = document.getElementById("dynamic-style");
-  if (existingStyle) {
-    existingStyle.remove();
-  }
-
-  if (styleFile) {
-    const link = document.createElement("link");
-    link.id = "dynamic-style";
-    link.rel = "stylesheet";
-    link.href = `/styles/${styleFile}`;
-    document.head.appendChild(link);
-  }
-};
-
-// Watch: Route changes and load the corresponding style
-const stopWatch = watch(
-  () => route.meta?.style,
-  (newStyle) => {
-    loadStyle(newStyle);
-  },
-  { immediate: true }
-);
-
-// Cleanup watch on component unmount
-onUnmounted(() => {
-  stopWatch();
-});
 </script>
