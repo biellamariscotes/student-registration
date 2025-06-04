@@ -36,7 +36,7 @@ src/
 
 - **Pinia**: State management with persistent state support
 - **Vue Router**: Seamless SPA navigation
-- **Element Plus Icons**: Comprehensive icon library
+- **Element Plus**: UI Components Library
 - **TypeScript**: Adds type safety to the project
 - **Vite**: Fast build tool and development server
 
