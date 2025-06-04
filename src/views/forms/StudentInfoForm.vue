@@ -140,7 +140,7 @@ const displayAge = computed(() => {
 
 // Fetch constants of Course
 const { data: options } = useDataFetcher<{ degreePrograms: string[] }>(
-  "src/data/courses.json"
+  "data/courses.json"
 );
 
 // Reactive variables for modal visibility and description
