@@ -1,11 +1,11 @@
 {
-  "name": "student-registration",
+  "name": "auth-ecommerce",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b && vite build",
+    "build": "npx vue-tsc -b && npx vite build",
     "preview": "vite preview"
   },
   "dependencies": {
