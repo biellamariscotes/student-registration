@@ -93,7 +93,7 @@
 </template>
 
 <script lang="ts" setup>
-import "@/assets/styles/register.css";
+import "@assets/styles/register.css";
 
 import { ref } from "vue";
 import eventBus from "@/event-bus";
