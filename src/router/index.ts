@@ -25,7 +25,7 @@ const routes: Array<RouteRecordRaw> = [
         path: "/forgot-pass",
         name: "Forgot Password?",
         component: () => import("../views/ForgotPassword.vue"),
-        meta: { title: "Login", style: "login.css", requiresGuest: true },
+        meta: { title: "Login", style: "Login.css", requiresGuest: true },
       },
       {
         path: "/register",
