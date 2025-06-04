@@ -16,9 +16,7 @@ export function useDataFetcher<T>(dataFilePath: string) {
     try {
       const response = await fetch(dataFilePath);
       if (!response.ok) {
-        throw new Error(
-          `HTTP error! grabe k n tamah n status: ${response.status}`
-        );
+        throw new Error(`HTTP error! ${response.status}`);
       }
       data.value = await response.json();
     } catch (error) {

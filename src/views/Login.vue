@@ -113,7 +113,7 @@ const loginRules: FormRules = {
 };
 
 // Fetch user data
-const { data: students } = useDataFetcher<User[]>("public/data/users.json");
+const { data: students } = useDataFetcher<User[]>("data/users.json");
 
 // Form submission method
 const submitForm = async () => {
