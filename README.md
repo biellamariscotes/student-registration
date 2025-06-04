@@ -40,21 +40,6 @@ src/
 - **TypeScript**: Adds type safety to the project
 - **Vite**: Fast build tool and development server
 
-## Installation
-
-To get started, run the following commands:
-
-```json
-# Clone the project
-git checkout interns/bmariscotes
-
-# Install dependencies
-npm install
-
-# Run development server
-npm run dev
-```
-
 ## Usage
 
 - Credentials are stored in `public/users/data`
