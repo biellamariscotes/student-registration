@@ -97,11 +97,11 @@ const dialogClass = computed(() => {
 const imageSrc = computed(() => {
   switch (props.type) {
     case "check":
-      return "assets/img/actions/check.png";
+      return "/assets/img/actions/check.png";
     case "warning":
-      return "assets/img/actions/warning.png";
+      return "/assets/img/actions/check.png";
     case "delete":
-      return "assets/img/actions/delete.png";
+      return "/assets/img/actions/delete.png";
     default:
       return "";
   }
