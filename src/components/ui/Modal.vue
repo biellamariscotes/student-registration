@@ -42,9 +42,6 @@
 
 <script lang="ts" setup>
 import { ref, defineProps, defineEmits, computed, watch } from "vue";
-import checkIcon from "/assets/img/actions/check.png";
-import warningIcon from "/assets/img/actions/warning.png";
-import deleteIcon from "/assets/img/actions/delete.png";
 
 // Component props
 const props = defineProps({
@@ -100,11 +97,11 @@ const dialogClass = computed(() => {
 const imageSrc = computed(() => {
   switch (props.type) {
     case "check":
-      return checkIcon;
+      return "/assets/img/actions/check.png";
     case "warning":
-      return warningIcon;
+      return "/assets/img/actions/check.png";
     case "delete":
-      return deleteIcon;
+      return "/assets/img/actions/delete.png";
     default:
       return "";
   }
